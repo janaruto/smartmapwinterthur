@@ -9,16 +9,14 @@ st.title("Smartmap für die Winterthurer Erneuerungswahlen des Stadtparlaments 2
 
 st.markdown(
     """
-    Diese Visualisierung wird euch präsentiert von der wohl **lösungsorientiertesten Partei der Schweiz** – der GLP 🟢🔵😉  
-    Politik, aber mit Daten statt Parolen.
+    Diese Visualisierung wird euch präsentiert von der GLP 🟢🔵😉  
+    Daher Werbung:
     """
 )
 
-# Fun GIF
+# Image instead of GIF
 st.image(
-    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGpjNnQ3d3oxNDk2NjNrcWJwejBwaHZ2NnM5NDk3MHNyOHBmd2VqYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5z0cCCGooBQUtejM4v/giphy.gif",
-    width=300,
-    caption="Keine Smartmap? keine Angst die GLP Winti macht euch eine"
+    "data/ugl.png"
 )
 
 df = pd.read_csv('data/processed/candidates_answers_processed.csv')
