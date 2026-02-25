@@ -91,13 +91,3 @@ git push -u origin main
 
 - A local backup was recommended before removing old `.git` history (if you cloned a project). If you need the previous history, restore it from the backup you created.
 - Scraping websites may be subject to the site's terms of service. Be respectful and throttle requests; the notebook contains small sleeps to avoid hammering the server.
-
-## Contact / Next steps
-
-If you want, I can:
-
-- add a small `requirements-scraper.txt` listing the scraper dependencies;
-- add a short example script to run the scraper headlessly;
-- or wire CI to automatically run the processing notebook.
-
-Tell me which of those (if any) you'd like and I will add it.
