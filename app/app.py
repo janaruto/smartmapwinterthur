@@ -18,7 +18,7 @@ st.markdown(
 st.image(
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGpjNnQ3d3oxNDk2NjNrcWJwejBwaHZ2NnM5NDk3MHNyOHBmd2VqYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5z0cCCGooBQUtejM4v/giphy.gif",
     width=300,
-    caption="Keine Smartmap, keine Angst die GLP Winti macht euch eine"
+    caption="Keine Smartmap? keine Angst die GLP Winti macht euch eine"
 )
 
 df = pd.read_csv('data/processed/candidates_answers_processed.csv')
@@ -83,7 +83,7 @@ fig.update_layout(
         scaleratio=1,
     ),
     yaxis=dict(
-        title="↑ Liberal | Konservativ ↓",
+        title="Konservativ ↓| ↑ Liberal ",
         range=[-1.1, 1.1],
         zeroline=True,
         zerolinecolor="gray",
