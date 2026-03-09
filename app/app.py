@@ -16,10 +16,21 @@ st.markdown(
 
 # Image instead of GIF
 st.image(
-    "data/ugl.png"
+    "data/logo.png"
 )
 
 df = pd.read_csv('data/processed/candidates_answers_processed.csv')
+
+filter_option = st.radio(
+    "Filter:",
+    ["All", "Elected", "Not Elected"],
+    horizontal=True
+)
+
+if filter_option == "Elected":
+    df = df[df["Elected"] == 1]
+elif filter_option == "Not Elected":
+    df = df[df["Elected"] == 0]
 
 # Normalize to [-1, 1]
 def normalize(series):
@@ -81,7 +92,7 @@ fig.update_layout(
         scaleratio=1,
     ),
     yaxis=dict(
-        title="Konservativ ↓| ↑ Liberal ",
+        title="← Konservativ | Liberal →",
         range=[-1.1, 1.1],
         zeroline=True,
         zerolinecolor="gray",
