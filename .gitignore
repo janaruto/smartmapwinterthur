@@ -1,0 +1,23 @@
+# Ignore the entire data folder (contains raw and output data)
+/data/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Environment files
+.env
+
+# pytest
+.pytest_cache/

@@ -7,7 +7,19 @@ A small Streamlit dashboard project and companion notebooks for scraping and pro
 - `app/` — the Streamlit app. Run `app/app.py` to start the dashboard.
 - `notebooks/1_scrapper.ipynb` — a Selenium-based scraper (not part of the app requirements). Change the configuration there to scrape another city or candidate range.
 - `notebooks/2_process.ipynb` — processing and transformation steps for scraped data. See it for details on how the raw CSV is converted/cleaned for the app.
-- `data/` — sample data and outputs. The scraper writes to `data/raw/candidates_answers.csv` by default.
+- `data/` — sample data and outputs.  
+  The scraper writes to `data/raw/candidates_answers.csv` by default.
+
+### Important notice regarding smartvote data
+
+This repository **does not redistribute smartvote datasets**.
+
+The data used in this project originates from **smartvote.ch** and is subject to their terms of use.  
+If you wish to use smartvote data for your own project, you must request permission from smartvote beforehand.
+
+See:  
+https://smartvote.ch/de/legal-and-privacy
+
 - `requirements.txt` — Python packages required to run the Streamlit app only.
 
 ## Quick start — Streamlit app
